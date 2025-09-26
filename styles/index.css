@@ -30,6 +30,7 @@ button {
     border-radius: 15px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    text-wrap: nowrap;
 }
 
 button:hover {
