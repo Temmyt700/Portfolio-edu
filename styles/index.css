@@ -1,0 +1,37 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #f5f1db;
+       font-family: "Mulish", sans-serif;
+       font-weight: 600;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  /* background: linear-gradient(to bottom right, 
+                           #e7dede 0%,  
+                            #010708 15% 40%, 
+                            #e7dede 100% ); */
+     background: linear-gradient(to bottom right, #010a05, #717776 );                       
+    color: #333;
+    padding-top: 10rem;
+}
+
+button {
+    background-color: #8670ef;
+    color: white;
+    border: none;
+    padding: 1em 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #ffc107;
+}
