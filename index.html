@@ -4,44 +4,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/index.css">
-       <link rel="stylesheet" href="styles/header.css">
-          <link rel="stylesheet" href="styles/main.css">
-
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
           <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar"> 
-            <div class="logo-text">Professor<span class="logo-text-dot">.</span></div>
+   
+   <!--
+      Navbar Section
+      --------------
+      This section defines the navigation bar for the website. It typically contains:
+         - The site logo or brand name, usually linking to the homepage.
+         - Navigation links to key sections or pages of the site.
+         - Responsive elements such as a hamburger menu for mobile devices.
+      The navbar provides users with easy access to the main areas of the website and enhances overall site navigation.
+   -->
+<nav>
+ <div class="overall-container">
+
+<div class="navbar-content-flex">
+   <div class="logo-text">Hon. Olusola<br>Akinbode<span class="logo-text-dot">.</span></div>
             <div>
- <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">About Me</a>
-               <a href="#">Reviews</a>
-                  <a href="#">blog</a>
-                     <a href="#">Portfolio</a>
-         
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+              
             </div>
             <div>
 <button>
     Contact Me
 </button>
             </div>
-           <div>
-            hamburger
-           </div>
+           <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+</div>
+
+         
+              </div>
         </nav>
 
-        <div>
-  <h1>Hello, World!</h1>
-        <p>This is a sample HTML file.</p>
+  <div class="overall-container">
 
+       <!--IMAGE AND ABOUT-->
 
-        </div>
-      
-    </div>
+       <!-- Hero Section -->
+       <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="datas/honolu1.png" alt="Dr. Hon. Olusola Akinbode">
+                </div>
+                <div class="hero-text">
+                    <h1>Dr. Hon. Olusola Akinbode, Ph.D</h1>
+                    <div class="roles">
+                        <span>Senior Lecturer</span>
+                        <span>Community Leader</span>
+                        <span>Chairman, Yewa North Local Government</span>
+                    </div>
+                    <p class="tagline">Dedicated to educational excellence and community development</p>
+                    <div class="hero-buttons">
+                        <button class="primary-btn">View Work & Projects</button>
+                        <button class="secondary-btn">Download CV</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- About Section -->
+       <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="bio">
+                    <p>A distinguished educational leader and community developer with over a decade of experience in academia and public service. Committed to transforming communities through education and sustainable development initiatives.</p>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <h3>12+</h3>
+                        <p>Years in Academia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>7000+</h3>
+                        <p>Beneficiaries Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Major Projects</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- Education Section -->
+       <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Ph.D – Educational Management</h3>
+                        <p>University of Ibadan</p>
+                        <span class="year">2016-2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>M.Ed – Educational Management</h3>
+                        <p>University of Ibadan</p>
+                        <span class="year">2012-2014</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>B.Ed – Educational Management</h3>
+                        <p>University of Ibadan</p>
+                        <span class="year">2003-2007</span>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- Experience Section -->
+       <section id="experience" class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Chairman</h3>
+                    <p class="company">Yewa North Local Government</p>
+                    <p class="duration">Nov 2024 – Present</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Senior Lecturer</h3>
+                    <p class="company">Federal College of Education, Abeokuta</p>
+                    <p class="duration">2012 – 2024</p>
+                </div>
+                <div class="experience-item">
+                    <h3>State Coordinator</h3>
+                    <p class="company">Tinubu Legacy Forum</p>
+                    <p class="duration">2020 – 2024</p>
+                </div>
+            </div>
+       </section>
+
+       <!-- Projects Section -->
+       <section id="projects" class="section">
+            <h2 class="section-title">Projects & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>Infrastructure Development</h3>
+                    <ul>
+                        <li>Beautification of Ayetoro Road</li>
+                        <li>Repair of Council Komatsu Grader Machine</li>
+                        <li>Renovation of Conference room & Legislative Building</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Community Development</h3>
+                    <ul>
+                        <li>Construction of classrooms & health centre</li>
+                        <li>Solar borehole installations across communities</li>
+                        <li>Empowerment programs (7,000+ beneficiaries)</li>
+                    </ul>
+                </div>
+            </div>
+       </section>
+
+       <!-- Skills Section -->
+       <section id="skills" class="section">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Educational Management</span>
+                <span class="skill-tag">Policy</span>
+                <span class="skill-tag">Community Development</span>
+                <span class="skill-tag">Project Planning</span>
+                <span class="skill-tag">Agriculture</span>
+                <span class="skill-tag">Public Speaking</span>
+                <span class="skill-tag">International Relations</span>
+            </div>
+       </section>
+
+       <!-- Contact Section -->
+       <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+       </section>
+
+       <!-- Footer -->
+       <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Facebook</a>
+                </div>
+                <p class="copyright">© 2025 Dr. Hon. Olusola Akinbode. All rights reserved.</p>
+            </div>
+       </footer>
+  </div>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>

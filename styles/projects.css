@@ -1,0 +1,40 @@
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-item {
+    background: rgba(134, 112, 239, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: #8670ef;
+    margin-bottom: 1.5rem;
+}
+
+.project-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-item li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.project-item li::before {
+    content: '•';
+    color: #8670ef;
+    position: absolute;
+    left: 0;
+}

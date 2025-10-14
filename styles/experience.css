@@ -1,0 +1,31 @@
+/* Experience Section */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.experience-item {
+    background: rgba(134, 112, 239, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item h3 {
+    color: #8670ef;
+    margin-bottom: 1rem;
+}
+
+.company {
+    margin-bottom: 0.5rem;
+}
+
+.duration {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}

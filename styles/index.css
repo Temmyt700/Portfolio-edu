@@ -19,6 +19,7 @@ body{
      background: linear-gradient(to bottom right, #010a05, #717776 );                       
     color: #333;
     padding-top: 10rem;
+    height: 1000px;
 }
 
 button {

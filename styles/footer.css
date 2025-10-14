@@ -1,0 +1,40 @@
+/* Footer */
+.footer {
+    padding: 4rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-links,
+.social-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer a {
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #8670ef;
+}
+
+.copyright {
+    opacity: 0.7;
+}
+
+@media (max-width: 840px) {
+    .footer-links,
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
