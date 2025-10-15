@@ -16,10 +16,11 @@ body{
                            #e7dede 0%,  
                             #010708 15% 40%, 
                             #e7dede 100% ); */
-     background: linear-gradient(to bottom right, #010a05, #717776 );                       
+     background: linear-gradient(to bottom right, #010a05, #717776 ); 
+background-attachment: fixed;
     color: #333;
     padding-top: 10rem;
-    height: 1000px;
+    height: 100vh;
 }
 
 button {

@@ -1,0 +1,82 @@
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Make hero section visible by default */
+#hero {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Ensure section titles are visible */
+.section-title {
+    opacity: 1;
+}
+
+/* Image Hover Effect (Pressed Effect) */
+.hero-image img {
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(0.98) translateY(2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional section reveal variations for visual interest */
+.reveal-delay-1 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.4s;
+}
+
+/* Timeline items stagger effect */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease;
+}
+
+.timeline-item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Experience and Project items stagger effect */
+.experience-item, .project-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.experience-item.active, .project-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills tags pop effect */
+.skill-tag {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.4s ease;
+}
+
+.skill-tag.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stats counter animation */
+.stat-item.active h3 {
+    animation: countUp 2s ease-out forwards;
+}

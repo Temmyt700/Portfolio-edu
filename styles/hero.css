@@ -1,9 +1,10 @@
 /* Hero Section */
 .hero-section {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2em ;
+    
 }
 
 .hero-content {
@@ -14,6 +15,7 @@
 
 .hero-image {
     flex: 1;
+   
 }
 
 .hero-image img {
@@ -40,7 +42,7 @@
 }
 
 .roles span {
-    background: rgba(134, 112, 239, 0.1);
+    background: rgba(70, 216, 51, 0.1);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
