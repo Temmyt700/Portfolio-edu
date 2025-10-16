@@ -10,10 +10,60 @@
     transform: translateY(0);
 }
 
-/* Make hero section visible by default */
-#hero {
-    opacity: 1 !important;
-    transform: none !important;
+/* Hero section entrance animation */
+@keyframes heroImageFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroTextFade {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-image {
+    opacity: 0;
+    animation: heroImageFade 1s ease-out forwards;
+}
+
+.hero-text {
+    opacity: 0;
+    animation: heroTextFade 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.hero-text .roles span {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroImageFade 0.5s ease-out forwards;
+}
+
+.roles span:nth-child(1) { animation-delay: 0.6s; }
+.roles span:nth-child(2) { animation-delay: 0.8s; }
+.roles span:nth-child(3) { animation-delay: 1s; }
+
+.hero-text .tagline {
+    opacity: 0;
+    animation: heroImageFade 0.5s ease-out forwards;
+    animation-delay: 1.2s;
+}
+
+.hero-buttons {
+    opacity: 0;
+    animation: heroImageFade 0.5s ease-out forwards;
+    animation-delay: 1.4s;
 }
 
 /* Ensure section titles are visible */
@@ -77,6 +127,13 @@
 }
 
 /* Stats counter animation */
+.stat-item h3 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 .stat-item.active h3 {
-    animation: countUp 2s ease-out forwards;
+    opacity: 1;
+    transform: translateY(0);
 }
