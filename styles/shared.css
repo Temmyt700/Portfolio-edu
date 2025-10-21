@@ -7,6 +7,31 @@
     font-size: 2.5rem;
     margin-bottom: 3rem;
     text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, 
+        transparent, 
+        #8670ef,
+        transparent
+    );
+    box-shadow: 0 0 10px rgba(134, 112, 239, 0.5);
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
 }
 
 /* About Stats */
@@ -15,11 +40,52 @@
     margin: 0 auto;
 }
 
-.bio {
-    text-align: center;
+.bio-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
     margin-bottom: 3rem;
+}
+
+.bio-image {
+    flex: 0 0 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.bio-image:hover img {
+    transform: scale(1.05);
+}
+
+.bio {
+    flex: 1;
+    text-align: left;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bio-image {
+        flex: 0 0 auto;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .bio {
+        text-align: center;
+    }
 }
 
 .quick-stats {

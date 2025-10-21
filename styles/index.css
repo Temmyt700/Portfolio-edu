@@ -8,19 +8,63 @@
        font-weight: 600;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  /* background: linear-gradient(to bottom right, 
-                           #e7dede 0%,  
-                            #010708 15% 40%, 
-                            #e7dede 100% ); */
-     background: linear-gradient(to bottom right, #010a05, #717776 ); 
-background-attachment: fixed;
-    color: #333;
+    background: 
+        linear-gradient(125deg, 
+            rgba(13, 13, 35, 0.95), 
+            rgba(30, 11, 54, 0.97) 35%,
+            rgba(43, 12, 77, 0.95) 65%,
+            rgba(23, 11, 41, 0.98)
+        ),
+        radial-gradient(circle at 50% 50%, 
+            rgba(134, 112, 239, 0.15) 0%, 
+            rgba(134, 112, 239, 0.05) 25%,
+            transparent 50%
+        );
+    background-attachment: fixed;
+    color: #f5f1db;
     padding-top: 10rem;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Add subtle animated gradient overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 0% 0%, 
+            rgba(134, 112, 239, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(circle at 100% 100%, 
+            rgba(134, 112, 239, 0.08) 0%,
+            transparent 50%
+        );
+    pointer-events: none;
+    animation: gradientShift 15s ease-in-out infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
 }
 
 button {

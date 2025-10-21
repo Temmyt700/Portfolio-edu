@@ -9,11 +9,15 @@
     background: rgba(134, 112, 239, 0.1);
     padding: 2rem;
     border-radius: 15px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(134, 112, 239, 0.2);
+    box-shadow: 0 4px 6px rgba(134, 112, 239, 0.1);
 }
 
 .experience-item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(134, 112, 239, 0.2);
+    border-color: rgba(134, 112, 239, 0.4);
 }
 
 .experience-item h3 {

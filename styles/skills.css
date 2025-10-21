@@ -11,10 +11,14 @@
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     font-size: 0.9rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(134, 112, 239, 0.2);
+    box-shadow: 0 2px 4px rgba(134, 112, 239, 0.1);
 }
 
 .skill-tag:hover {
     transform: translateY(-2px);
     background: rgba(134, 112, 239, 0.2);
+    border-color: rgba(134, 112, 239, 0.4);
+    box-shadow: 0 4px 8px rgba(134, 112, 239, 0.2);
 }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/social-bar.css">
           <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -92,8 +93,13 @@
        <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="bio">
-                    <p>A distinguished educational leader and community developer with over a decade of experience in academia and public service. Committed to transforming communities through education and sustainable development initiatives.</p>
+                <div class="bio-container">
+                    <div class="bio-image">
+                        <img src="datas/honolu1.png" alt="Dr. Hon. Olusola Akinbode Speaking">
+                    </div>
+                    <div class="bio">
+                        <p>A distinguished educational leader and community developer with over a decade of experience in academia and public service. Committed to transforming communities through education and sustainable development initiatives.</p>
+                    </div>
                 </div>
                 <div class="quick-stats">
                     <div class="stat-item">
@@ -166,21 +172,77 @@
        <section id="projects" class="section">
             <h2 class="section-title">Projects & Achievements</h2>
             <div class="projects-grid">
-                <div class="project-item">
-                    <h3>Infrastructure Development</h3>
-                    <ul>
-                        <li>Beautification of Ayetoro Road</li>
-                        <li>Repair of Council Komatsu Grader Machine</li>
-                        <li>Renovation of Conference room & Legislative Building</li>
-                    </ul>
+                <div class="project-card">
+                    <h3>Ayetoro Road Beautification</h3>
+                    <div class="project-images">
+                        <div class="image-container">
+                            <img src="datas/projects/road1.jpg" alt="Ayetoro Road Project">
+                        </div>
+                        <div class="image-container">
+                            <img src="datas/projects/road2.jpg" alt="Ayetoro Road Project">
+                        </div>
+                    </div>
+                    <p class="project-description">Complete renovation and beautification of Ayetoro Road, improving accessibility and aesthetics for the community.</p>
                 </div>
-                <div class="project-item">
-                    <h3>Community Development</h3>
-                    <ul>
-                        <li>Construction of classrooms & health centre</li>
-                        <li>Solar borehole installations across communities</li>
-                        <li>Empowerment programs (7,000+ beneficiaries)</li>
-                    </ul>
+
+                <div class="project-card">
+                    <h3>Conference Room Renovation</h3>
+                    <div class="project-images">
+                        <div class="image-container">
+                            <img src="datas/projects/conference-before.jpg" alt="Conference Room Before">
+                            <span class="image-caption">Before</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="datas/projects/conference-after.jpg" alt="Conference Room After">
+                            <span class="image-caption">After</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Modern renovation of the Legislative Building conference room, creating a professional meeting space.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Healthcare Center Construction</h3>
+                    <div class="project-images">
+                        <div class="image-container">
+                            <img src="datas/projects/health-construction.jpg" alt="Health Centre Construction">
+                            <span class="image-caption">Construction</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="datas/projects/health-complete.jpg" alt="Completed Health Centre">
+                            <span class="image-caption">Completed</span>
+                        </div>
+                    </div>
+                    <p class="project-description">New health centre construction providing essential medical services to the community.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Solar Borehole Installation</h3>
+                    <div class="project-images">
+                        <div class="image-container">
+                            <img src="datas/projects/borehole-install.jpg" alt="Borehole Installation">
+                            <span class="image-caption">Installation</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="datas/projects/borehole-complete.jpg" alt="Completed Borehole">
+                            <span class="image-caption">In Use</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Solar-powered borehole installations providing clean water access across multiple communities.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Community Empowerment Program</h3>
+                    <div class="project-images">
+                        <div class="image-container">
+                            <img src="datas/projects/empowerment1.jpg" alt="Training Session">
+                            <span class="image-caption">Training</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="datas/projects/empowerment2.jpg" alt="Distribution Event">
+                            <span class="image-caption">Distribution</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Empowerment initiative benefiting over 7,000 community members through training and resource distribution.</p>
                 </div>
             </div>
        </section>
@@ -203,6 +265,9 @@
        <section id="contact" class="section">
             <h2 class="section-title">Contact Me</h2>
             <div class="contact-container">
+                <div class="contact-image">
+                    <img src="datas/honolu1.png" alt="Dr. Hon. Olusola Akinbode">
+                </div>
                 <form class="contact-form">
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" required>
@@ -228,10 +293,19 @@
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <div class="social-links">
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Facebook</a>
+                <div class="social-bar">
+                    <a href="https://www.linkedin.com/in/hon-olusola-akinbode-ph-d-452905374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank" title="LinkedIn">
+                        <img src="datas/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/OSAkinbode?t=U6oZ63hx3FN_pTprCKogsg&s=09" class="social-link" target="_blank" title="X (Twitter)">
+                        <img src="datas/icons/x-twitter.svg" alt="X (Twitter)">
+                    </a>
+                    <a href="https://www.facebook.com/share/14JjvxKKf24/" class="social-link" target="_blank" title="Facebook">
+                        <img src="datas/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://youtube.com/@olusolaakinbodeph.d?si=ldYumF6QhR-Jevvp" class="social-link" target="_blank" title="YouTube">
+                        <img src="datas/icons/youtube.svg" alt="YouTube">
+                    </a>
                 </div>
                 <p class="copyright">© 2025 Dr. Hon. Olusola Akinbode. All rights reserved.</p>
             </div>
