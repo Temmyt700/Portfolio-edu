@@ -1,0 +1,68 @@
+/* Key Activities Styles */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.activity-card {
+    background: rgba(134, 112, 239, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(134, 112, 239, 0.2);
+    padding: 2rem;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(134, 112, 239, 0.2);
+}
+
+.activity-card h3 {
+    color: #8670ef;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.activity-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.activity-images .image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.activity-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.activity-images .image-container:hover img {
+    transform: scale(1.1);
+}
+
+.activity-description {
+    line-height: 1.6;
+    color: #f5f1db;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-images {
+        gap: 0.5rem;
+    }
+}

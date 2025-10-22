@@ -38,16 +38,24 @@
 
 @media (max-width: 768px) {
     .social-bar {
-        position: fixed;
-        left: 0;
-        top: auto;
-        bottom: 0;
-        right: 0;
+        position: static;
         transform: none;
         flex-direction: row;
         justify-content: center;
-        padding: 1rem;
-        background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(10px);
+        padding: 2rem 0;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    #contact .social-bar {
+        background: rgba(134, 112, 239, 0.1);
+        padding: 2rem;
+        border-radius: 16px;
+        margin-top: 3rem;
+        border: 1px solid rgba(134, 112, 239, 0.2);
+    }
+
+    #contact .social-bar .social-link {
+        transform: scale(1.2);
     }
 }

@@ -82,14 +82,37 @@ a:hover {
     display: block;
   }
 
-  .navbar-content-flex div:nth-child(2),
-  .navbar-content-flex div:nth-child(3) {
+  .navbar-content-flex > div:nth-child(2),
+  .navbar-content-flex > div:nth-child(3) {
     display: none;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(to bottom,
+      rgba(13, 13, 35, 0.98),
+      rgba(30, 11, 54, 0.98) 35%,
+      rgba(43, 12, 77, 0.98)
+    );
+    border: 1px solid rgba(134, 112, 239, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    z-index: 1000;
   }
 
   .navbar-content-flex {
     width: 100%;
     position: relative;
+  }
+
+  .navbar-content-flex.active > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .navbar-content-flex div:nth-child(2) {
