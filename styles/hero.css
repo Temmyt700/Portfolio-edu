@@ -113,5 +113,9 @@
     padding: 1em 10px;
 }
 
-
+}
+@media (max-width: 400px) {
+.hero-text h1 {
+    font-size: 2rem
+}
 }
