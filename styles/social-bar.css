@@ -42,10 +42,9 @@
         transform: none;
         flex-direction: row;
         justify-content: center;
-        padding: 2rem 0;
+        padding: 1rem 0;
         gap: 2rem;
         margin-top: 2rem;
-        background: none;
     }
 
     #contact .social-bar {
@@ -55,22 +54,8 @@
         margin-top: 3rem;
         border: 1px solid rgba(134, 112, 239, 0.2);
     }
-    
-    .social-bar{
-        background: none !important;
-        border: none !important;
-    }
 
     #contact .social-bar .social-link {
         transform: scale(1.2);
     }
-
-       .social-bar {
-        background: none;
-       }
-
-       .social-link img {
-    width: 40px;
-    height: 20px;
-}
 }
