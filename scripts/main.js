@@ -21,6 +21,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navContent = document.querySelector('.navbar-content-flex');
     const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('nav a[href^="#"], a[href^="#projects"]' );
+
+    // Smooth scroll function
+    const scrollToSection = (e) => {
+        e.preventDefault();
+        const targetId = e.currentTarget.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+            const navHeight = nav.offsetHeight;
+            const targetPosition = targetSection.offsetTop - navHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+
+            // Close mobile menu if open
+            if (window.innerWidth <= 840) {
+                hamburger.classList.remove('active');
+                navContent.classList.remove('active');
+            }
+        }
+    };
+
+    // Add click event to all nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', scrollToSection);
+    });
 
     // Initialize animations
     const initializeAnimations = () => {
