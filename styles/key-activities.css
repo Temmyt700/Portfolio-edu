@@ -12,7 +12,7 @@
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(134, 112, 239, 0.2);
-    padding: 2rem;
+    padding: 2em;
 }
 
 .activity-card:hover {
@@ -37,7 +37,7 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/16;
 }
 
 .activity-images img {
@@ -64,5 +64,15 @@
 
     .activity-images {
         gap: 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .activities-grid {
+        padding: 0;
+    }
+
+    .activity-card {
+        padding: 0.5em;
     }
 }

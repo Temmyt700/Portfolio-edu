@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-bottom: 4rem;
+
     background: rgba(134, 112, 239, 0.1);
     padding: 2rem;
     border-radius: 20px;
@@ -20,7 +21,7 @@
 .overview-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+object-fit: fill;
 }
 
 .project-list {
@@ -63,8 +64,22 @@
     color: #8670ef;
 }
 
+@media (max-width: 990px) {
+.overview-image img {
+  object-fit: fill;
+
+}
+}
+
 @media (max-width: 768px) {
     .project-overview {
         grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .project-list {
+        padding: 0;
     }
 }
