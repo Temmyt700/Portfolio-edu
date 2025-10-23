@@ -76,6 +76,10 @@ a:hover {
   width: 28px;
 }
 
+.contact-mobile {
+  display: none;
+}
+
 /* Mobile Navigation */
 @media screen and (max-width: 840px) {
   .hamburger {
@@ -178,6 +182,10 @@ a:hover {
   .navbar-content-flex div:nth-child(2) a:hover::before {
     width: 10px;
   }
+
+  .contact-mobile {
+  display: block;
+}
 }
 
 /* Scroll Effects */
