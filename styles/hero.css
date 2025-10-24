@@ -16,11 +16,12 @@
 
 .hero-image {
     flex: 1;
+
    
 }
 
 .hero-image img {
-  
+  min-height: 15rem;
     max-width: 70%;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -28,6 +29,7 @@
 
 .hero-text {
     flex: 1;
+
     
 }
 
@@ -63,7 +65,14 @@
   
 }
 
-@media (max-width: 840px) {
+@media (max-width: 950px) {
+.hero-image img {
+     max-width: 90%;  
+}
+
+}
+
+@media (max-width: 855px) {
 .hero-section {
     padding: 1em ;
 }
@@ -77,6 +86,9 @@
         max-width: 500px;
         margin: 0 auto;
     }
+.hero-image img {
+     max-width: 70%;  
+}
 
     .roles {
         justify-content: center;
