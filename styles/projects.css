@@ -74,10 +74,10 @@
 
 @media (max-width: 500px) {
 .projects-grid {
-    padding: 0;
+    padding: 1em;
 }
 
 .project-images {
-    padding: 0;
+    padding: 1em;
 }
 }
